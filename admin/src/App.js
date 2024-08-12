@@ -3,7 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import Admin from "./Pages/Admin";
 
-export const backend_url = 'https://shopper-backend-9zlj.onrender.com';
+export const backend_url = 'https://shopper-backend-clp0.onrender.com';
 export const currency = '₹';
 
 function App() {

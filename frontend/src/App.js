@@ -10,7 +10,7 @@ import men_banner from "./Components/Assets/banner_mens.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 import LoginSignup from "./Pages/LoginSignup";
 
-export const backend_url = 'https://shopper-backend-9zlj.onrender.com';
+export const backend_url = 'https://shopper-backend-clp0.onrender.com';
 export const currency = '₹';
 
 function App() {
