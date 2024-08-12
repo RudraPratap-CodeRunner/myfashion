@@ -21,13 +21,13 @@
     font-weight: 600;
 }
 .offers-left button{
-    width: 230px;
-    height: 60px;
+    width: 200px;
+    height: 50px;
     border-radius: 35px;
     background: #ff4141;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 30px;
     cursor: pointer;

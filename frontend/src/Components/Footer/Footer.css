@@ -5,7 +5,6 @@
     align-items: center;
     gap: 25px;
     padding-top: 20px;
-    margin-top: 30px;
 }
 .footer-logo{
     display: flex;
@@ -32,7 +31,7 @@
 .footer-links li{
     cursor: pointer;
 }
-.footer-social-icon{
+.footer-social-icons{
     display: flex;
     gap: 10px;
 }

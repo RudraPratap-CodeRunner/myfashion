@@ -17,6 +17,7 @@
     background: #252525;
   }
 .collections{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
