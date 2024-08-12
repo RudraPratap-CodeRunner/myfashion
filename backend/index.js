@@ -6,12 +6,13 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 const port = process.env.PORT || 4000;
+require('dotenv').config()
 
 app.use(express.json());
 app.use(cors());
 
 // connect with database 
-// mongoose.connect('connection string')
+// mongoose.connect(process.env.MONGODB_KEY)
 
 
 app.get('/',(req,res)=>{
