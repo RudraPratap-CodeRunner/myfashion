@@ -7,7 +7,7 @@ const path = require("path");
 const cors = require("cors");
 require('dotenv').config()
 const port = process.env.PORT || 4000;
-import axios from 'axios'
+const axios = require("axios");
 
 
 app.use(express.json());
