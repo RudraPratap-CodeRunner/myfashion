@@ -7,6 +7,7 @@ const path = require("path");
 const cors = require("cors");
 require('dotenv').config()
 const port = process.env.PORT || 4000;
+import axios from 'axios'
 
 
 app.use(express.json());
@@ -245,4 +246,28 @@ app.post("/removeproduct", async (req, res) => {
 app.listen(port, (error) => {
   if (!error) console.log("Server Running on port " + port);
   else console.log("Error : ", error);
+});
+
+// Set up a timer to call the API every 12 minutes
+const apiCallInterval = 12 * 60 * 1000; // 12 minutes in milliseconds
+
+function makeApiCall() {
+  axios.get("https://food-del-backend-8cm9.onrender.com")
+    .then(response => {
+      console.log("API call successful");
+    })
+    .catch(error => {
+      console.error("Error making API call:", error.message);
+    });
+}
+
+// Initial API call
+makeApiCall();
+
+// Set up the interval to make API calls every 12 minutes
+const apiCallTimer = setInterval(makeApiCall, apiCallInterval);
+//Global error middleware
+app.use((err, req, res, next) => {
+  res.status(500).json({ message: "An error occurred"});
+  next()
 });
