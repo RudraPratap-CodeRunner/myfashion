@@ -5,11 +5,11 @@
     padding-top: 100px;
 }
 .loginsignup-container{
-    width: 90%;
-    max-width: 550px;
+    width: max(23vw,330px);
+    
     background: white;
     margin: auto;
-    padding: 30px 40px;
+    padding: 25px 30px;
     box-sizing: border-box;
 }
 .loginsignup-container h1{
@@ -18,7 +18,7 @@
 .loginsignup-fields{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     margin-top: 20px;
 }
 .loginsignup-fields input{
