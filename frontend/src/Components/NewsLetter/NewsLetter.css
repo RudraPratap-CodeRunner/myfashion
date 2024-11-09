@@ -54,6 +54,7 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+    flex: 1;
 }
 
 /* ----------- media query--------- */
@@ -92,8 +93,10 @@
     }
     .newsletter div{
         width: 100%;
+        
     }
     .newsletter div button{
         font-size: 12px;
+        flex: 1;
     }
 }
